@@ -5,6 +5,15 @@ body {
     font-family: monospace, Tahoma;
 }
 
+header a {
+    color: #494D5f;
+}
+
+header a:hover {
+    color: #494D5f;
+    text-decoration: none;
+}
+
 a {
     color: #77009E;
     text-decoration: none;
@@ -25,14 +34,19 @@ h2 {
     text-align: center;
 }
 
-img {
-    width: 50%;
-    max-width: 300px;
-    min-width: 100px;
-}
-
 figure {
     text-align: center;
     font-style: italic;
+}
+
+script {
+    width: 10%;
+}
+
+main img {
+    max-width: 300px;
+    min-width: 200px;
+    border-radius: 10px;
+    border: 2px solid black;
 }
 

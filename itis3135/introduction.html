@@ -9,7 +9,7 @@
     </head>
     <body>
         <header>
-            <h1>Ilton da Costa Neto || ITIS 3135</h1>
+            <h1><a href="../">Ilton da Costa Neto</a> || ITIS 3135</h1>
         </header>
         <nav>
             <a href="./">Home</a>
@@ -46,13 +46,26 @@
             
         </main>
         <footer>
-                <p>Links to my other pages:</p>
+            <p>Links to my other pages:</p>
             <nav>
                 <a href = "https://github.com/Idacos" target="_new">GitHub</a> |
                 <a href = "https://idacos.github.io/" target="_new">GitHub.io</a> |
                 <a href = "https://www.linkedin.com/in/ilton-da-costa-neto/">LinkedIn</a> 
             </nav>
-            <p>Page Built by <a href="netofirm.com/">Neto Firm</a> ©2024</p>
+            <p>Page Built by <a href="netofirm.com/">Neto Firm</a> ©2024, Certified in <a href="https://www.freecodecamp.org/certification/idacosta/responsive-web-design">Responsive Web Design</a></p>            <nav>
+                <a id="validation-button-html">
+                    <img src="images/htmlValidationButton.png" alt="html validation button">
+                </a>
+                <a id="validation-button-css">
+                    <img src="images/cssValidationButton.png" alt="html validation button">
+                </a>
+            </nav>
         </footer>
+        <script>
+            document.getElementById("validation-button-html").setAttribute("href", 
+            "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-button-css").setAttribute("href", 
+            "https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
     </body>
 </html>
