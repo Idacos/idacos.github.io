@@ -9,37 +9,14 @@
     </head>
     <body>
         <header>
-            <h1><a href="../">Ilton da Costa Neto</a> || ITIS 3135</h1>
+            <div data-include="components/header.html"></div>
         </header>
-        <nav>
-            <a href="./">Home</a>
-            || 
-            <a href="introduction.html">Introduction</a>
-            ||
-            <a href="contract.html">Contract</a>
-            ||
-            <a href="about.html">About</a>
-        </nav>
         <main>
             <h2>I am Ilton and this is my ITIS 3135 First Course Page</h2>
             <p>Welcome to my 3135 Course page!</p>
         </main>
         <footer>
-                <p>Links to my other pages:</p>
-            <nav>
-                <a href = "https://github.com/Idacos" target="_new">GitHub</a> |
-                <a href = "https://idacos.github.io/" target="_new">GitHub.io</a> |
-                <a href = "https://www.linkedin.com/in/ilton-da-costa-neto/">LinkedIn</a> 
-            </nav>
-            <p>"Unleash the Flock, Rule the Deck!"</p>
-            <p>Page Built by <a href="dacostanetwork.com/">da Costa Network</a> ©2024, Certified in <a href="https://www.freecodecamp.org/certification/idacosta/responsive-web-design">Responsive Web Design</a></p>            <nav>
-                <a id="validation-button-html">
-                    <img src="images/htmlValidationButton.png" alt="html validation button">
-                </a>
-                <a id="validation-button-css">
-                    <img src="images/cssValidationButton.png" alt="css validation button">
-                </a>
-            </nav>
+            <div data-include="components/footer.html"></div>
         </footer>
         <script>
             document.getElementById("validation-button-html").setAttribute("href", 
@@ -47,5 +24,6 @@
             document.getElementById("validation-button-css").setAttribute("href", 
             "https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
         </script>
+        <script src="scripts/HTMLInclude.min.js"></script>
     </body>
 </html>
