@@ -50,3 +50,30 @@ main img {
     border: 2px solid black;
 }
 
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+}
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #535353;
+    color: white;
+}
+tbody tr:nth-child(even) {
+    background-color: #ebebeb;
+}
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+caption {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+

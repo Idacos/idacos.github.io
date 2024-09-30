@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ilton da Costa Neto's Site || Intrepid Duck || ITIS3135 Tables</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link href="styles/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>HTML Tables - Company</h2>
+            <h3>My Tabular Data</h3>
+            <ol>
+                <li>Sakura Agape (sagape@gmail.com)</li>
+                <li>Shadow The Hedgehog (edgelord92@gmail.com)</li>
+                <li>Hotdog Steve (hotdogsteve@yahoo.com)</li>
+                <li>Dimitri Alexandre Blaiddyd (dblaid@hotmail.com)</li>
+                <li>Emily Rogers (emrogers@teamaol.com)</li>
+                <li>Felix Hugo Fraldarius (felixhfra@gmail.com)</li>
+                <li>Sylvain Jose Gautier (theladiesman@yahoo.com)</li>
+                <li>Annette Fantine Dominic (annette.cominic@gmail.com)</li>
+            </ol>
+            
+            <h3>Employee Data in Simple Table</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sakura Agape</td>
+                        <td>sagape@gmail.com</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Shadow The Hedgehog</td>
+                        <td>edgelord92@gmail.com</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>Hotdog Steve</td>
+                        <td>hotdogsteve@yahoo.com</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Dimitri Alexandre Blaiddyd</td>
+                        <td>dblaid@hotmail.com</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Rogers</td>
+                        <td>emrogers@teamaol.com</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Felix Hugo Fraldarius</td>
+                        <td>felixhfra@gmail.com</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Sylvain Jose Gautier</td>
+                        <td>theladiesman@yahoo.com</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Annette Fantine Dominic</td>
+                        <td>annette.cominic@gmail.com</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Employee Data in Complex Table</h3>
+
+<figure>
+    <figcaption>Employee Information with Salaries</figcaption>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Years of Service</th>
+                <th>Monthly Salary ($)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3">Marketing</td>
+                <td>Sakura Agape</td>
+                <td>sagape@gmail.com</td>
+                <td>25</td>
+                <td>6500</td>
+            </tr>
+            <tr>
+                <td>Shadow The Hedgehog</td>
+                <td>edgelord92@gmail.com</td>
+                <td>14</td>
+                <td>4300</td>
+            </tr>
+            <tr>
+                <td>Hotdog Steve</td>
+                <td>hotdogsteve@yahoo.com</td>
+                <td>2</td>
+                <td>1900</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Development</td>
+                <td>Dimitri Alexandre Blaiddyd</td>
+                <td>dblaid@hotmail.com</td>
+                <td>7</td>
+                <td>3500</td>
+            </tr>
+            <tr>
+                <td>Emily Rogers</td>
+                <td>emrogers@teamaol.com</td>
+                <td>15</td>
+                <td>4000</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Sales</td>
+                <td>Felix Hugo Fraldarius</td>
+                <td>felixhfra@gmail.com</td>
+                <td>8</td>
+                <td>6000</td>
+            </tr>
+            <tr>
+                <td>Sylvain Jose Gautier</td>
+                <td>theladiesman@yahoo.com</td>
+                <td>2</td>
+                <td>5500</td>
+            </tr>
+            <tr>
+                <td>Annette Fantine Dominic</td>
+                <td>annette.cominic@gmail.com</td>
+                <td>10</td>
+                <td>4000</td>
+            </tr>
+            <tr>
+                <th colspan="3">Total Years of Service</th>
+                <td>83</td>
+                <td>$35,700</td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script>
+            document.getElementById("validation-button-html").setAttribute("href", 
+            "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-button-css").setAttribute("href", 
+            "https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>
