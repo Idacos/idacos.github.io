@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ilton da Costa Neto's Site || Intrepid Duck || ITIS3135 Forms</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link href="styles/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>Intrepid Duck Company Form</h2>
+
+            <form action="#">
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <!--Name-->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+        
+                    <!--Phone Number-->
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required><br>
+        
+                    <!--Email-->
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required><br>
+                </fieldset>
+
+                <!--Checkbox-->
+                <fieldset>
+                    <legend>Services</legend>
+
+                    <input type="checkbox" id="development" name="services" value="Development">
+                    <label for="development">Development</label><br>
+
+                    <input type="checkbox" id="marketing" name="services" value="Marketing">
+                    <label for="marketing">Marketing</label><br>
+
+                    <input type="checkbox" id="sales" name="services" value="Sales">
+                    <label for="sales">Sales</label><br>
+                </fieldset>
+    
+                <!--Radio Buttons-->
+                <fieldset>
+                    <legend>Workload Size</legend>
+
+                    <input type="radio" id="small" name="workload" value="Small" required>
+                    <label for="small">Small</label>
+
+                    <input type="radio" id="medium" name="workload" value="Medium" required>
+                    <label for="medium">Medium</label>
+
+                    <input type="radio" id="large" name="workload" value="Large" required>
+                    <label for="large">Large</label>
+                </fieldset>
+    
+                <!--Select Box-->
+                <label for="contact">Preferred Contact Method:
+                <select id="contact" name="contact" required>
+                    <option value="">Choose an option</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="text">Text</option>
+                </select>
+                </label>
+    
+                <!--Form Buttons-->
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script>
+            document.getElementById("validation-button-html").setAttribute("href", 
+            "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation-button-css").setAttribute("href", 
+            "https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>
+</html>

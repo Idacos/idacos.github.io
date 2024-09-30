@@ -77,3 +77,35 @@ caption {
     font-weight: bold;
 }
 
+form {
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+form label {
+    display: inline-block;
+}
+
+form input {
+    padding: 4px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+}
+
+
+button {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;;
+}
+
+button:hover {
+    background-color: #696868;
+}
