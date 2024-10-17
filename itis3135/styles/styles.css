@@ -25,9 +25,10 @@ a:hover {
 }
 
 main {
+    max-width: 1200px; /* Ensures content does not stretch too wide */
+    width: 90%; /* Flexible width for responsiveness */
+    margin: 0 auto; /* Centers the content */
     text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 h2 {
@@ -95,7 +96,6 @@ form input {
     border-radius: 4px;
 }
 
-
 button {
     background-color: #1f1f1f;
     color: #fff;
@@ -103,9 +103,53 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 5px;;
+    margin-top: 5px;
 }
 
 button:hover {
     background-color: #696868;
+}
+
+hr {
+    border-color: #494D5f;
+    max-width: 700px;
+}
+
+header nav a {
+    display: inline-block;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px;
+    font-weight: bold;
+    color: rgb(11, 11, 243);
+}
+
+header nav a:hover {
+    background-color: white;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
+    main {
+        width: 95%;
+        margin: 0 auto;
+    }
+    table {
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        width: 90%;
+    }
+}
+
+/* Laptops and Small Screens */
+@media screen and (min-width: 981px) and (max-width: 1400px) {
+    main {
+        max-width: 1000px;
+    }
 }
