@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon TCG Hobby Site</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+    
+        header {
+            background-color: #1a237e;
+            color: #ffeb3b;
+            text-align: center;
+            padding: 1.5rem;
+        }
+    
+        header h1 {
+            font-size: 2.5rem;
+            color: #ffd700;
+        }
+    
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0;
+            margin-top: 1rem;
+        }
+    
+        nav ul li a {
+            color: #42a5f5;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1.0rem;
+            transition: color 0.3s, background-color 0.3s;
+            border-radius: 5px;
+            display: inline-block;
+            line-height: 26px;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            background-color: #283593;
+            color: #ffeb3b;
+        }
+
+    
+        /* Main Content Sections */
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+    
+        figure {
+            margin: 1rem 0;
+            text-align: center;
+        }
+    
+        figure img {
+            max-width: 90%;
+            max-height: 550px;
+            width: auto;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        #what figure img {
+            width: 80%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        main a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        main a:hover {
+            color: #42a5f5;
+            text-decoration: underline;
+        }
+
+    
+        figcaption {
+            font-style: italic;
+            color: #4a4a4a;
+            margin-top: 0.5rem;
+        }
+    
+        /* Footer Styles */
+        footer {
+            background-color: #1c2331;
+            color: #fdd835; /* Pokémon yellow */
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    
+        footer a {
+            color: #ff5252;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    
+        /* CRAP Design Enhancements */
+        .validation-button {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: #ff5252;
+            color: #ecf0f1;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-right: 0.5rem;
+        }
+    
+        .validation-button:hover {
+            background-color: #e53935;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0;
+            }
+
+            #what figure img {
+            width: 80%;
+            object-fit: cover;
+            height: auto;
+            border-radius: 8px;
+        }
+        }
+    </style>    
+</head>
+<body>
+    <header>
+        <h1>Pokémon Trading Card Game</h1>
+        <nav>
+            <ul>
+              <li><a href="#what" onclick="showSection('what')">Home</a></li>
+              <li><a href="#who" onclick="showSection('who')">About</a></li>
+              <li><a href="#when" onclick="showSection('when')">Best Times</a></li>
+              <li><a href="#where" onclick="showSection('where')">Best Locations</a></li>
+              <li><a href="#how" onclick="showSection('how')">How</a></li>
+              <li><a href="#why" onclick="showSection('why')">Why</a></li>
+              <li><a href="#ai" onclick="showSection('ai')">AI Prompts</a></li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+        <section id="what">
+          <h2>Home</h2>
+          <h3>Introduction</h3>
+          <p>"Welcome to the world of Pokémon!" Here, I'll share my journey with the Pokémon TCG, 
+            an overview of its history, and some tips for getting into the competitive side of the game. 
+          </p>
+          <figure>
+            <img src="images/energycards.jpg" alt="A pile of energy Pokémon cards">
+            <figcaption>Energy cards taken by <a href="https://www.flickr.com/photos/145378148@N08/27782338044" target="_blank">www.releaseday.co.uk</a></figcaption>
+          </figure>
+          <figure>
+            <img src="images/psychic.jpg" alt="A part of my collection of Pokémon cards">
+            <figcaption>Cards from my own collection</figcaption>
+          </figure>
+        </section>
+    
+        <section id="who">
+          <h2>About Me</h2>
+          <h3>My Journey</h3>
+          <p>My name is Ilton da Costa and I've been collecting Pokémon cards ever since I was 8 years old. 
+            When I was younger, I would purely collect the cards, but now I'm heavily involved in playing the Pokémon TCG and
+            staying updated with different metas and set releases.</p>
+          <p>While I only collected when I was younger, I deeply got into the competitive scene of the TCG in 2020. As the 
+            pandemic hit us, I found it as a new hobby to dive into and I was instantly immersed. Playing the game and learning the history
+            of the game kept me enamored throughout the hard times in quarantine.
+          </p>
+          <figure>
+            <img src="images/oldphoto2.jpg" alt="An older image of me surrounded by Pokémon and Yu-Gi-Oh cards">
+            <figcaption>Surrounded by Pokémon and Yu-Gi-Oh cards when I was a kid</figcaption>
+          </figure>
+        </section>
+    
+        <section id="when">
+          <h2>Best Times</h2>
+          <h3>Release Events</h3>
+          <p>The best times to get some Pokémon cards is generally during set releases! 
+            New sets in the United States are generally released every two months, with occasional mini-sets added in between.
+            Each set provides generally 200+ new cards that both collectors and players can make use of!
+          </p>
+          <p>For those interested in competing, there are tournaments hosted year long by the Pokémon Company International in which anyone 
+            can register for and compete in! However, if competing for official tournaments may seem daunting, plenty of local card shops host their 
+            own tournaments for their community. This makes it easy for new players to get their foot into the door of competitive Pokémon.
+          </p>
+          <figure>
+            <img src="images/Pokémon_merchandise.jpg" alt="An image containing Pokémon merchanise from Japan">
+            <figcaption>Some Pokémon merchanise taken by <a href="https://www.flickr.com/photos/misocrazy/26083301/" target="_blank">Mighty June</a></figcaption>
+          </figure>
+        </section>
+    
+        <section id="where">
+          <h2>Best Locations</h2>
+          <h3>Local Stores</h3>
+          <p>The best places to find Pokémon cards are often local stores like Walmart, Target, and Gamestop.
+            Though if you're able to, finding a local card shop might be the best option, as you can buy singles there, while also
+            finding other people in the Pokémon TCG community to meet and hang out with. 
+          </p>
+          <figure>
+            <img src="images/targetcards.jpg" alt="Pokémon card section at Target">
+            <figcaption>Stocked Pokémon cards at a local Target taken by <a href="https://www.flickr.com/photos/kichigai/2562060664" target="_blank">Kichigai Mentat</a></figcaption>
+          </figure>
+          <p>One of the more popular card shops is known as Full Grip Games. They're located in Akron, Ohio, and gained its popularity
+            due to the youtuber and twitch streamer <a href="https://www.twitch.tv/trickygym" target="_blank">TrickyGym</a>.
+          </p>
+        </section>
+    
+        <section id="how">
+          <h2>How</h2>
+          <h3>Getting Started</h3>
+          <p>If you're just looking to collect, getting into the Pokémon TCG is extremely easy. I suggest by starting off with just picking
+            up some product at a local store near you and open the packs inside of it! One of the best products to pick up is what is know as
+            an Elite Trainer Box (or ETB for short). It generally provides 10 packs to open, some sleeves, dice, and coins which can be used in anyway
+            you'd like, along with a booklet that lists each card in the set, which can help you to start collecting!
+          </p>
+          <p>If you'd want to get into the TCG competitively however, there are a few more steps you'd want to take. One of the best products to pick up
+            for a new competitor is what is known as the league battle decks. They will often provide you with a strong deck to get you started along with dice,
+            a rule book, and what to do in order to upgrade your new deck even futher!
+          </p>
+          <figure>
+            <img src="images/booklet.jpg" alt="A Pokémon ETB booklet">
+            <figcaption>My booklet provided by an ETB showing the checklist of collectable cards</figcaption>
+          </figure>
+        </section>
+    
+        <section id="why">
+          <h2>Why</h2>
+          <h3>Nostalgia and Fun</h3>
+          <p>For many people, collecting Pokémon cards is often about nostalgia. As Pokémon being such a large intellectual property, many young adults
+            today are now collecting Pokémon cards out of nostalgia, as they would own Pokémon cards as a kid.
+          </p>
+          <p>While nostalgia may impact me, the main reason as to why I play the Pokémon TCG is because I find it extremely fun! It's very simple to get into 
+            but still allows for depth and complexity the further you get into it, making is easy for both beginners and veterans to find enjoyment in the game.
+          </p>
+          <figure>
+            <img src="images/pexels-introspectivedsgn-9661252.jpg" alt="Four Charizard cards being held">
+            <figcaption>Old and new Charizard cards taken by <a href="https://www.pexels.com/photo/a-person-holding-pokemon-trading-cards-9661252/" target="_blank">Erik Mclean</a></figcaption>
+          </figure>
+        </section>
+
+        <section id="ai">
+            <h2>AI Prompts</h2>
+            <p>I used ChatGPT for 2 main sections of this assignment. The CSS as a base to build upon and the JS needed to
+                hide the individual sections.
+            </p>
+            <p>
+                I provided the assignment directions "Use an embedded stylesheet since this is all one page.
+                Make sure the styling is nice and follows the CRAP principles, 
+                No times new roman, generic blue underlined links, no white background, no black text, you get it."
+                Afterwards, I created the color scheme to be more Pokémon themed.
+            </p>
+            <p>
+                For the JS, I provided the directions "Research and find a solution using css and/or JS that hides all sections except the one you have clicked. 
+                The idea is to mimic the nav bar in your main site, the user will click a "link" in your nav tag that will hide all the sections on the page and 
+                ONLY display info of the section of choice. So if you click on the word "Best locations" in the nav bar, it will only display the "best locations" 
+                section on the page and hide the rest so the user can't scroll to see it."
+                With that,I incorporated the JS and CSS needed.
+            </p>
+          </section>
+      </main>
+
+    <footer>
+        <p>Page Built by <a href="dacostanetwork.com/" target="_blank">da Costa Network</a> ©2024, Certified in <a href="https://www.freecodecamp.org/certification/idacosta/responsive-web-design" target="_blank">Responsive Web Design</a></p>            
+<nav>
+    <a id="validation-button-html">
+        <img src="images/htmlValidationButton.png" alt="html validation button">
+    </a>
+    <a id="validation-button-css">
+        <img src="images/cssValidationButton.png" alt="css validation button">
+    </a>
+    <a href="https://wave.webaim.org/report#/https://webpages.charlotte.edu/idacosta/itis3135/hobby/">
+        <img src="images/button_validation_wcag-1.png" alt="Accessibility check">
+    </a>
+</nav>
+    </footer>
+    <script>
+        document.getElementById("validation-button-html").setAttribute("href", 
+        "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation-button-css").setAttribute("href", 
+        "https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll("main > section").forEach(section => {
+                section.style.display = "none";
+            });
+    
+            document.getElementById(sectionId).style.display = "block";
+        }
+    
+        window.onload = function() {
+            showSection('what');
+        };
+    </script>    
+</body>
