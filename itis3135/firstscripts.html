@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ilton da Costa Neto's Site || Intrepid Duck || ITIS3135 First Scripts</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link href="styles/styles.css" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Ilton da Costa Neto || Intrepid Duck || First Scripts</h2>
+        <h3 id="currentdatetime"></h3>
+
+        <p>Please enter your name:</p>
+        <input id="name" type="text" required>
+        <p>How are you feeling?:</p>
+        <input id="feeling" type="text" required>
+        <button type="button" onclick="greetUser()">Submit</button>
+        <p id="greetingmessage"></p>
+
+        <p>Please input a number between 1 and 10:</p>
+        <input id="number">
+        <button type="button" onclick="numberSides()">Submit</button>
+        <p id="sides"></p>
+
+        <h3>Duck Functions</h3>
+        <button onclick="randomQuacks()">Recieve a random number of Quacks</button>
+        <p id="quackmessage"></p>
+        <button onclick="generateCardRarity()">Find out what rarity your card is</button>
+        <p id="raritymessage"></p>
+        <button onclick="addCard()">Add a card to your collection!</button>
+        <p id="collectionmessage"></p>
+        <button onclick="showGameRules()">Show Game Rules</button>
+        <p id="rulesmessage"></p>
+        <input type="number" id="number1" placeholder="Enter first number">
+        <input type="number" id="number2" placeholder="Enter second number">
+        <button type="button" onclick="subtractNumbers(parseFloat(document.getElementById('number1').value), parseFloat(document.getElementById('number2').value))">Subtract</button>
+        <p id="differencemessage"></p>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation-button-html").setAttribute("href", 
+        "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation-button-css").setAttribute("href", 
+        "https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/firstscript.js"></script> 
+</body>
+</html>
