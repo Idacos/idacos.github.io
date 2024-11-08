@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painted by Pixi Custom Order Form</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Painted by Pixi</h1>
+    </header>
+    <main>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="nailguide.html">Nail Size Guide</a>
+            <a href="customform.html">Custom Order Form</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="project_overview.html">Project Overview</a>
+        </nav>
+        <h2>Custom Order Form</h2>
+        <h3>Interested in a custom set?</h3>
+        <p>Send in an order form for a quote!</p>
+        <p><em>*prices are based on complexity of design</em></p>
+        
+        <form action="/submit_order" method="post" enctype="multipart/form-data">
+            <label for="inspiration">Please submit any inspiration pictures below:</label><br>
+            <input type="file" id="inspiration" name="inspiration[]" multiple accept="image/*"><br><br>
+            
+            <label for="mainColor">Pick main color:</label><br>
+            <input type="text" id="mainColor" name="mainColor" required><br><br>
+
+            <label for="accentColor1">Pick optional accent color(s):</label><br>
+            <input type="text" id="accentColor1" name="accentColor1"><br><br>
+
+            <label for="nailShape">Nail shape?</label><br>
+            <select id="nailShape" name="nailShape" required>
+                <option value="">(Select One)</option>
+                <option value="square">Square</option>
+                <option value="oval">Oval</option>
+                <option value="stiletto">Stiletto</option>
+                <option value="coffin">Coffin</option>
+                <option value="almond">Almond</option>
+                <option value="squoval">Squoval</option>
+            </select><br><br>
+
+            <label for="nailLength">Nail length?</label><br>
+            <select id="nailLength" name="nailLength" required>
+                <option value="">(Select One)</option>
+                <option value="extrasmall">Extra Small</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="long">Long</option>
+                <option value="extralong">Extra Long</option>
+            </select><br><br>
+
+            <label for="charms">3D Charms?</label><br>
+            <input type="radio" id="charmsYes" name="charms" value="yes" required>
+            <label for="charmsYes">Yes</label><br>
+            <input type="radio" id="charmsNo" name="charms" value="no" required>
+            <label for="charmsNo">No</label><br><br>
+
+            <label for="nailSize">Nail size?</label><br>
+            <input type="file" id="nailSizeImage" name="nailSizeImage" accept="image/*"><br>
+            <input type="text" id="nailSizeText" name="nailSizeText" placeholder="Or specify size in text" required><br><br>
+
+            <button type="submit">Submit Order</button>
+            <button type="reset">Reset Form</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Page Built by <a href="dacostanetwork.com/">da Costa Network</a> ©2024, Certified in <a href="https://www.freecodecamp.org/certification/idacosta/responsive-web-design">Responsive Web Design</a></p>            
+<nav>
+    <a id="validation-button-html">
+        <img src="images/htmlValidationButton.png" alt="html validation button">
+    </a>
+    <a id="validation-button-css">
+        <img src="images/cssValidationButton.png" alt="css validation button">
+    </a>
+</nav>
+    </footer>
+    <script>
+        document.getElementById("validation-button-html").setAttribute("href", 
+        "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation-button-css").setAttribute("href", 
+        "https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
+
