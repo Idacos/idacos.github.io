@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painted by Pixie</title>
+    <title>Painted by Pixi</title>
     <link rel="stylesheet" href="styles/styles.css">
     <style>
         .content {
@@ -22,8 +22,9 @@
         }
 
         .section1, .section2, .main, .features {
-            background-color: #444;
+            background-color: #f8e3f3;
             padding: 20px;
+            border-radius: 8px;
         }
 
         .section1 {
@@ -36,22 +37,34 @@
 
         .main {
             grid-area: main;
+            background-color: #f1d6e2;
         }
 
         .features {
             grid-area: features;
+            background-color: #f1d6e2;
         }
 
         .features ul {
             list-style: none;
             padding: 0;
         }
+
+        a {
+            color: #a64ca6;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff5a8a;
+        }
     </style>
 </head>
 <body>
-        <header>
-            <h1>Painted by Pixi</h1>
-        </header>
+    <header>
+        <h1>Painted by Pixi</h1>
+    </header>
         <main style="all: unset;">
             <nav>
                 <a href="index.html">Home</a>
@@ -61,26 +74,44 @@
                 <a href="about.html">About Us</a>
                 <a href="contact.html">Contact Us</a>
                 <a href="project_overview.html">Project Overview</a>
+                <a href="review1.html">Peer Review 1</a>
+                <a href="review2.html">Peer Review 2</a>
             </nav>
             <div class="container">
             <div class="content">
                 <div class="section1">
-                    <h2>Section 1</h2>
+                    <h2>Our Services</h2>
+                    <p>At Painted by Pixi, we specialize in creating custom nail art that matches your style and personality. Whether you're looking for something bold and edgy or soft and elegant, we have you covered. Each design is crafted by hand to ensure precision and creativity.</p>
+                    <p>We offer a wide variety of nail art services, including:</p>
+                    <ul>
+                        <li>Custom designs based on your preferences</li>
+                        <li>Seasonal themes</li>
+                        <li>Special occasion designs</li>
+                    </ul>
                 </div>
                 <div class="section2">
-                    <h2>Section 2</h2>
+                    <h2>Why Choose Us?</h2>
+                    <p>Our founder, Marisa Flowers, has over 5 years of experience in nail art. Her passion and dedication ensure that every set of nails is a work of art. We use high-quality products to ensure long-lasting results, and we work with you every step of the way to ensure your complete satisfaction.</p>
+                    <p>With Painted by Pixi, you get:</p>
+                    <ul>
+                        <li>Handmade, unique designs</li>
+                        <li>Friendly and professional service</li>
+                        <li>Affordable pricing with great quality</li>
+                    </ul>
                 </div>
                 <div class="main">
                     <h2>Main Content</h2>
-                    <p>This is the main content area where information will be displayed.</p>
+                    <p>Welcome to Painted by Pixi! We offer a range of services to meet your nail art needs. From intricate designs to simple and elegant styles, each set of nails is made to match your personal taste. We use only the best materials, ensuring that your nails are not only beautiful but also durable.</p>
+                    <p>Take a look at our <a href="gallery.html">gallery</a> to see examples of our work, and feel free to reach out to us through our <a href="contact.html">contact page</a> for more details on booking an appointment or requesting a custom design!</p>
+                    <img src="images/hellokittynail.jpg" alt="Main Content Image" style="width: 100%; height: auto; border-radius: 8px;">
                 </div>
                 <div class="features">
                     <h2>Features</h2>
                     <ul>
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 3</li>
-                        <li>Feature 4</li>
+                        <li>Expertly crafted custom nail art</li>
+                        <li>Personalized designs that reflect your style</li>
+                        <li>High-quality nail products</li>
+                        <li>Timely delivery and attention to detail</li>
                     </ul>
                 </div>
             </div>
@@ -103,6 +134,7 @@
             "https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
         </script>
         <script src="scripts/HTMLInclude.min.js"></script>
+        <script src="scripts/scripts.js"></script>
     </div>
 </body>
 </html>
