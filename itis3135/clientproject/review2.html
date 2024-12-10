@@ -11,17 +11,7 @@
         <h1>Painted by Pixi</h1>
     </header>
     <main>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="nailguide.html">Nail Size Guide</a>
-            <a href="customform.html">Custom Order Form</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="project_overview.html">Project Overview</a>
-            <a href="review1.html">Peer Review 1</a>
-            <a href="review2.html">Peer Review 2</a>
-        </nav>
+        <div data-include="components/nav.html"></div>
         <div class="container">
             <h2>Evaluation of Allie Costner's Website</h2>
 
@@ -34,16 +24,14 @@
 
             <h3>Website Checklist - von Briesen's Web Classes</h3>
             <ul>
-                <li>Is the website responsive and mobile-friendly?</li>
-                <li>Does it follow good design principles (CRAP - Contrast, Repetition, Alignment, Proximity)?</li>
-                <li>Are the fonts easy to read and are the colors visually appealing?</li>
-                <li>Is there a clear navigation menu and does it work correctly?</li>
-                <li>Does the website load quickly and without issues?</li>
-                <li>Is there relevant content with a clear focus on the website’s purpose?</li>
-                <li>Does the website have all necessary elements (e.g., header, footer, content, contact info)?</li>
-                <li>Is the website accessible (e.g., alt text for images, appropriate contrast ratios)?</li>
-                <li>Does the website have a clear call to action (e.g., contact form, shop)?</li>
-                <li>Are there any broken links or missing pages?</li>
+                <li>Does it follow CRAP principles? - Yes</li>
+                <li>Are the fonts easy to read and are the colors visually appealing? - Yes</li>
+                <li>Is there a clear navigation menu and does it work correctly? - Yes</li>
+                <li>Does the website load quickly and without issues? - Yes</li>
+                <li>Is there relevant content with a clear focus on the website’s purpose? - Yes</li>
+                <li>Does the website have all necessary elements? - Yes</li>
+                <li>Is the website accessible? - Yes</li>
+                <li>Are there any broken links or missing pages? - No</li>
             </ul>
 
             <h3>My Evaluation:</h3>
@@ -59,22 +47,16 @@
         </div>
     </main>
     <footer>
-        <p>Page Built by <a href="dacostanetwork.com/">da Costa Network</a> ©2024, Certified in <a href="https://www.freecodecamp.org/certification/idacosta/responsive-web-design">Responsive Web Design</a></p>            
-        <nav>
-            <a id="validation-button-html">
-                <img src="images/htmlValidationButton.png" alt="html validation button">
-            </a>
-            <a id="validation-button-css">
-                <img src="images/cssValidationButton.png" alt="css validation button">
-            </a>
-        </nav>
+        <div data-include="components/footer.html"></div>
     </footer>
     <script>
         document.getElementById("validation-button-html").setAttribute("href", 
-        "https://validator.w3.org/check?uri=" + location.href);
+            "https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation-button-css").setAttribute("href", 
-        "https://jigaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>
+            "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        document.getElementById("validation-button-wcag").setAttribute("href", 
+            "https://www.w3.org/WAI/test-evaluate/checkers/#reporting");
+    </script>    
     <script src="scripts/HTMLInclude.min.js"></script>
     <script src="scripts/scripts.js"></script>
 </body>
